@@ -1,17 +1,24 @@
 .legal-header {
   background-color: #e2e2e2;
-  padding: 30px;
+  padding: 15px;
   margin-top: 60px;
   width: 100%;
+  z-index: 99;
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  
 }
 
 .legal-header h1 {
   width: 100%;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 0px auto;
 }
 
 main {
+  overflow: scroll;
 }
 
 section {
@@ -21,8 +28,8 @@ section {
   border-bottom: 1px solid grey;
   padding: 30px;
   max-width: 900px;
-  margin: 0 auto;
   color: white;
+  top: 125px; 
 }
 
 .section-label {
@@ -30,6 +37,8 @@ section {
   background-color: #2b2d3b;
   height: max-content;
   padding: 10px 16px;
+  position: sticky;
+  top: 150px; 
 }
 
 .document-content {
@@ -57,8 +66,11 @@ footer {
   align-items: center;
   width: 100%;
   background-color: #e2e2e2;
-  padding: 0 30px;
-  min-height: 70px;
+  padding: 0 15px;
+  min-height: 75px;
+  position: static; 
+  z-index: 99
+   
 }
 
 .footer-content {
@@ -68,7 +80,8 @@ footer {
   gap: 50px;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
+  margin:  auto;
+  
 }
 
 .agree-btn {
